@@ -1,0 +1,5 @@
+/* App background for black theme */
+.app-bg {
+  min-height: 100vh;
+  /* background removed to allow particles to show */
+}
