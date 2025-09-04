@@ -1,3 +1,60 @@
+/* Animation for mobile navbar overlay */
+/* Animation for mobile navbar overlay */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 30, 0.97);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: navbarFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navbar-overlay a {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: navbarLinkFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+.navbar-overlay a:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.navbar-overlay a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.navbar-overlay a:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.navbar-overlay a:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.navbar-overlay a:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.navbar-overlay a:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+@keyframes navbarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes navbarLinkFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .navbar-glass {
   display: flex;
   align-items: center;
@@ -5,7 +62,7 @@
   background: rgba(30, 30, 40, 0.7);
   border-radius: 40px;
 
-  padding: 1rem 4rem;
+  padding: 0.5rem 1rem;
   margin: 2rem auto;
   box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -13,7 +70,21 @@
 
   color: #fff;
   width: 80%;
-  position: relative;
+  /* Remove position for proper overlay stacking */
+  /* Full screen overlay for mobile navbar */
+  .navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(20, 20, 30, 0.97);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .navbar-logo {

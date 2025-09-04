@@ -17,6 +17,7 @@ import Navbar from "./Navbar";
 import "./App.css";
 
 import Aurora from "./components/Aurora";
+import LightRays from "./components/LightRays";
 
 const AppContent = () => {
   const location = useLocation();
@@ -24,7 +25,7 @@ const AppContent = () => {
     <div className="app-bg relative min-h-screen w-full overflow-hidden">
       {location.pathname === "/" && (
         <div className="absolute inset-0 -z-10 ">
-          <Aurora/>
+          <LightRays/>
         </div>
       )}
       <Navbar />
