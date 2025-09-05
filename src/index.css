@@ -129,3 +129,13 @@ html,
   backdrop-filter: blur(8px);
   color: #fff;
 }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hardware acceleration for better performance */
+.fade-page-wrapper {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import Footer from "./components/Footer";
 
 import Styledbutton from "./components/Styledbutton";
 import AnimatedList from "./components/AnimatedList";
@@ -16,7 +17,7 @@ const Home = () => {
               alt="icon"
             />
             <span className="text-white font-semibold text-lg z-10">
-               R . A . I . T
+              R . A . I . T
             </span>
           </div>
           <h1 className="lg:text-6xl text-3xl font-medium mb-2 ">
@@ -27,7 +28,6 @@ const Home = () => {
             Our Vision is to inspire determination and enthusiasm in a
             professional environment
           </p>
-
 
           <div className="w-full flex justify-center items-center gap-x-6 mt-12">
             <Styledbutton />
@@ -50,17 +50,18 @@ const Home = () => {
             <h5>
               The Institute of Electrical and Electronics Engineers (IEEE) is
               the world’s largest technical professional organization dedicated
-              to advancing technology for the benefit of humanity. 
-              <br /> RAIT IEEE is
-              the official Student Branch of this prestigious international
-              organization. It is a committee committed to the holistic
-              development of students at RAIT, empowering them with skills
-              beyond academics.<br/>
-             
+              to advancing technology for the benefit of humanity.
+              <br /> RAIT IEEE is the official Student Branch of this
+              prestigious international organization. It is a committee
+              committed to the holistic development of students at RAIT,
+              empowering them with skills beyond academics.
+              <br />
             </h5>
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

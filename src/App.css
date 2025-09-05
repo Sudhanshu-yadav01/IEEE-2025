@@ -3,3 +3,102 @@
   min-height: 100vh;
   /* background removed to allow particles to show */
 }
+/* Enhanced fade page transitions with smooth easing and transform effects */
+.fade-page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-page-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Added slide transition option */
+.slide-page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-page-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Added scale transition option */
+.scale-page-enter {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.scale-page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scale-page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scale-page-exit-active {
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scale-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+/* Added smooth scrolling and performance optimizations */
+html {
+  scroll-behavior: smooth;
+}
+
+
