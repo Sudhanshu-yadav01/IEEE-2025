@@ -4,7 +4,7 @@ import Lenis from "lenis";
 // Glassmorphic card with image section and clickable heading/passage
 export const ScrollStackItem = ({children, itemClassName = ""}) => (
   <div
-    className={`scroll-stack-card w-[98%] bg-gray-900 border border-white/20 rounded-2xl p-10 lg:w-full text-white mx-auto ${itemClassName}`.trim()}
+    className={`scroll-stack-card w-[95%] bg-gray-900 border border-white/20 rounded2xl mt-4 p-10 lg:w-full text-white mx-auto ${itemClassName}`.trim()}
     style={{pointerEvents: "auto"}}
   >
     {children}
